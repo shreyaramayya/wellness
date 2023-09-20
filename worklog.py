@@ -25,4 +25,3 @@ with open('WorkHours.csv', 'a', newline='') as file:
     fieldnames = ['Date', 'Rotation', 'Hours', 'Notes']
     writer = csv.DictWriter(file, fieldnames=fieldnames)
     writer.writerow({'Date': d1, 'Rotation': rot, 'Hours': hours, 'Notes': notes})
-

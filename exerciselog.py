@@ -6,12 +6,11 @@ today = dt.date.today()
 d1 = today.strftime("%d/%m/%y")
 
 # collect information on workouts
-rot = input("What rotation are you on? ")
 type = input("What type of exercise did you do? ")
 time = input("How long did you work out? ")
 cals = input("How many calories did you burn? ")
 dist = input("What distance did you cover today? ")
-notes = input("What happened today at work? ")
+notes = input("How was your workout? ")
 
 #write to exercise log
 with open('Exercise.csv', 'a', newline='') as file:
